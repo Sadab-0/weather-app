@@ -8,23 +8,26 @@
 </head>
 <body>
    <div class="card">
-    <div class="search">
+    <div class="search">        <!-- search and search button -->
         <input type="text" placeholder="enter city name" spellcheck = "false">
         <button><image src = "images/search.png"></button>
     </div>
+            <div class="error">     <!--if user enter invalid city name-->
+                <p>Invalid City Name</p>
+            </div>
             <div class="weather">
-                <img class="Weather-icon" src="images/clouds.png">
-                <h1 class="temp">22*c</h1>
-                <h2 class="city">New York City</h2>
+                <img class="Weather-icon" src="images/clouds.png">      <!--weather image according to weather condition-->
+                <h1 class="temp">22°C</h1>      <!--tempreture-->
+                <h2 class="city">New York City</h2>     <!--city name-->
                 <div class="details">
-                    <div class="col">
+                    <div class="col">       <!--Humidity-->
                         <img src="images/humidity.png">
                         <div>
                             <p class = "humidity">50%</p>
                             <p>Humidity</p>
                         </div>
                     </div>
-                <div class="col">
+                <div class="col">       <!--wind-->
                         <img src="images/wind.png">
                         <div>
                             <p class = "wind">50 km/h</p>
@@ -34,5 +37,6 @@
                 </div>
             </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
